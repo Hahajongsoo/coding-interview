@@ -17,7 +17,7 @@ def problem():
     # 그러므로 이 방식대로 인덱싱을 하는 것이 좋다.
 
     def binary_search(value, start, end):
-        print(N_list[start : end + 1])
+        print(N_list[start: end + 1])
         if start > end:
             return False
         median = (start + end) // 2
@@ -28,8 +28,8 @@ def problem():
         else:
             return True
 
-    for num in M_list:
-        if binary_search(num, 0, N - 1):
+    for i in range(M):
+        if binary_search(M_list[i], 0, N - 1):
             print(1)
         else:
             print(0)

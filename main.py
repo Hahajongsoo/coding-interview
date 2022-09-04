@@ -2,7 +2,7 @@ import sys
 import io
 
 
-from problems._1920 import problem
+from BOJ._1920 import problem
 
 
 file = open("inputs.txt", "w")
